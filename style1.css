@@ -1,0 +1,235 @@
+/* تنسيق أساسي */
+/* تنسيق أساسي */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* الشعار واسم المدرسة بخلفية مزركشة */
+.home-header {
+    background-image: url('islamic_pattern_light.png'); /* صورة الخلفية المزركشة */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+}
+
+
+school-logo {
+    width: 150px; /* حجم الشعار */
+    height: auto;
+    position: absolute;
+    left: 20px; /* وضع الشعار في أقصى اليسار */
+}
+
+
+#about {
+    padding: 20px;
+    text-align: center;
+}
+
+.school-name {
+    font-size: 2.5em; /* حجم الخط أكبر */
+    color: #333;
+    font-weight: bold; /* خط غليظ */
+    margin: 20px 0; /* مسافة أعلى وأسفل */
+}
+
+h2 {
+    font-size: 2em; /* حجم خط أكبر لعنوان التعليم */
+    font-weight: bold; /* خط غليظ */
+}
+
+p {
+    font-size: 1.2em; /* حجم خط أكبر للفقرات */
+    line-height: 1.6; /* ارتفاع السطر لزيادة الوضوح */
+}
+
+/* الشعار واسم المدرسة بخلفية مزركشة */
+.home-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* توسيط اسم المدرسة */
+    position: relative; /* لضبط الشعار على اليسار */
+}
+
+
+
+
+
+
+/* تنسيق اسم المدرسة */
+.school-name {
+    font-size: 1.8em;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color: #4CAF50;
+    border-radius: 5px;
+}
+
+/* شريط الأخبار المتحرك */
+.news-ticker {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.news-ticker p {
+    display: inline-block;
+    animation: ticker 30s linear infinite; /* مدة أطول تجعل الحركة أبطأ */
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* المحتوى الرئيسي */
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* تنسيق عنوان المدرسة */
+.school-name {
+    font-size: 4em; /* حجم خط أكبر */
+    font-weight: bold; /* خط غليظ */
+    text-align: center; /* محاذاة إلى المنتصف */
+    animation: colorChange 3s infinite alternate; /* تأثير تغيير الألوان */
+    margin-top: 20px; /* مسافة فوق العنوان */
+}
+
+/* تأثير تغيير الألوان */
+@keyframes colorChange {
+    0% { color: #4CAF50; } /* اللون الأول */
+    25% { color: #FF5733; } /* اللون الثاني */
+    50% { color: #FFC300; } /* اللون الثالث */
+    75% { color: #DAF7A6; } /* اللون الرابع */
+    100% { color: #581845; } /* اللون الخامس */
+}
+
+
+/* تنسيق عبارة "معاً نرتقي" مع تأثير اللمعان وتغيير الألوان */
+.motto {
+    font-size: 3em; /* حجم خط أكبر */
+    font-weight: bold; /* خط غليظ */
+    margin: 30px 0; /* مسافة أعلى وأسفل */
+    animation: colorChange 3s infinite alternate; /* تأثير تغيير الألوان */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* تأثير اللمعان */
+}
+
+/* تأثير تغيير الألوان */
+@keyframes colorChange {
+    0% { color: #4CAF50; } /* اللون الأول */
+    25% { color: #FF5733; } /* اللون الثاني */
+    50% { color: #FFC300; } /* اللون الثالث */
+    75% { color: #DAF7A6; } /* اللون الرابع */
+    100% { color: #581845; } /* اللون الخامس */
+}
+/* تنسيق شريط التنقل */
+.navbar {
+    list-style-type: none; /* إزالة النقاط من القائمة */
+    padding: 0; /* إزالة الحشو */
+    display: flex; /* استخدام Flexbox لتوزيع العناصر */
+    justify-content: center; /* محاذاة العناصر في الوسط */
+}
+
+.navbar li {
+    margin: 0 15px; /* مسافة بين العناصر */
+}
+
+.navbar a {
+    display: block; /* جعل الرابط كتلة */
+    padding: 10px 20px; /* حشوة داخلية */
+    background-color: #4CAF50; /* لون خلفية */
+    color: white; /* لون النص */
+    font-size: 1.5em; /* حجم الخط أكبر */
+    text-decoration: none; /* إزالة الخط السفلي */
+    border-radius: 5px; /* زوايا دائرية */
+    transition: background-color 0.3s; /* تأثير تغيير لون الخلفية عند التمرير */
+}
+
+.navbar a:hover {
+    background-color: #45a049; /* لون الخلفية عند التمرير */
+}
+/* تنسيق قسم الأنشطة */
+#activities {
+    background-color: #f9f9f9; /* لون خلفية للقسم */
+    padding: 15px; /* مسافة داخلية */
+    border-radius: 5px; /* زوايا دائرية */
+    margin-top: 20px; /* مسافة أعلى القسم */
+    text-align: center; /* محاذاة النص إلى المنتصف */
+}
+
+/* تنسيق عنوان الأنشطة */
+.activities-title {
+    color: #4CAF50; /* اللون الأخضر */
+    font-weight: bold; /* خط غليظ */
+    font-size: 2em; /* حجم خط أكبر */
+}
+
+/* تنسيق قائمة الأنشطة */
+.activities-list {
+    list-style-type: none; /* نوع النقاط */
+    padding-left: 0; /* إزالة المسافة من اليسار */
+    margin: 10px 0; /* مسافة فوق وتحت القائمة */
+}
+
+.activities-list li {
+    font-size: 1.2em; /* حجم الخط */
+    margin-bottom: 5px; /* مسافة بين العناصر */
+    color: #4CAF50; /* اللون الأخضر */
+}
+
+/* تنسيق وصف الأنشطة */
+.activities-description {
+    color: #4CAF50; /* اللون الأخضر */
+    font-weight: bold; /* خط غليظ */
+    font-size: 1.2em; /* حجم خط أكبر */
+}
+/* التذييل */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}

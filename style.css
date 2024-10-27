@@ -1,0 +1,200 @@
+/* تنسيق أساسي */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* الشعار واسم المدرسة */
+.home-header {
+    background-image: url('islamic_pattern_light.png'); /* خلفية مزركشة */
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.school-logo {
+    width: 170px; /* حجم الشعار */
+    height: auto;
+    position: absolute;
+    left: 20px; /* الشعار في أقصى اليسار */
+    
+}
+
+/* اسم المدرسة */
+.school-name {
+    font-size: 4em; /* تكبير حجم الخط */
+    font-weight: bold;
+    text-align: center;
+    animation: colorChange 3s infinite alternate; /* تأثير تغيير الألوان */
+    margin-top: 20px;
+}
+
+/* تأثير تغيير الألوان */
+@keyframes colorChange {
+    0% { color: #4CAF50; }
+    25% { color: #FF5733; }
+    50% { color: #FFC300; }
+    75% { color: #DAF7A6; }
+    100% { color: #581845; }
+}
+
+/* شريط التنقل */
+nav {
+    background-color: #4CAF50;
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #45a049;
+}
+
+/* شريط الأخبار المتحرك */
+.news-ticker {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.news-ticker p {
+    display: inline-block;
+    animation: ticker 30s linear infinite;
+}
+
+@keyframes ticker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* المحتوى الرئيسي */
+section {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.welcome-message {
+    font-size: 1.8em; /* حجم الخط */
+    font-weight: bold; /* خط غليظ */
+    color: #333; /* لون النص */
+    text-align: right; /* محاذاة لليمين */
+    margin-top: 20px; /* مسافة من الأعلى */
+    margin-right: 20px; /* مسافة من اليمين */
+}
+nav {
+    background-color: #4CAF50;
+    padding: 20px; /* زيادة الحشوة لزيادة ارتفاع الشريط */
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px 30px; /* زيادة الحشوة الأفقية والرأسية */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px; /* تعديل المسافة بين العناصر */
+    font-size: 2em; /* تكبير حجم الخط */
+}
+
+/* تنسيق قسم الأنشطة */
+#activities {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.activities-title {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.activities-list {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.activities-list li {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #4CAF50;
+}
+
+/* تنسيق وصف الأنشطة */
+.activities-description {
+    color: #4CAF50;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/* تنسيق عبارة "معاً نرتقي" مع تأثير اللمعان وتغيير الألوان */
+.motto {
+    font-size: 3em; /* حجم خط أكبر */
+    font-weight: bold; /* خط غليظ */
+    margin: 30px 0; /* مسافة أعلى وأسفل */
+    animation: colorChange 3s infinite alternate; /* تأثير تغيير الألوان */
+    text-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700; /* تأثير اللمعان */
+}
+
+/* تأثير تغيير الألوان */
+@keyframes colorChange {
+    0% { color: #4CAF50; } /* اللون الأول */
+    25% { color: #FF5733; } /* اللون الثاني */
+    50% { color: #FFC300; } /* اللون الثالث */
+    75% { color: #DAF7A6; } /* اللون الرابع */
+    100% { color: #581845; } /* اللون الخامس */
+}
+
+/* التذييل */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9em;
+}
